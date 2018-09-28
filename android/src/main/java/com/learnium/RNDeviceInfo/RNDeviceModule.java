@@ -253,7 +253,6 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
 
     String deviceName = "Unknown";
 
-
     try {
       if (Class.forName("com.google.android.gms.iid.InstanceID") != null) {
         constants.put("instanceId", com.google.android.gms.iid.InstanceID.getInstance(this.reactContext).getId());
